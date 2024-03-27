@@ -15,15 +15,16 @@ function getWeekNumber(d) {
 
 var result = getWeekNumber(new Date());
 
-let circle = ["RevOps", "Agence de nantes", "Finance", "XP Academy", "Production", "Marketing", "Support Sales", "IT", "RH"]
+let circle = [    "Agence de nantes", "Finance", "XP Academy", "Production", "Marketing", "Support Sales", "IT", "RH", "RevOps"]
 
 let current_week = result[0];
 
 console.log(current_week)
-console.log(current_week)
+
 while (current_week >= circle.length + 1) {
   current_week -= circle.length;
 }
+
 let next_week = current_week + 1
 current_week -= 1
 
